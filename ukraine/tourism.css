@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    background: url(/media/ukr_fon.jpg);
+
+    position: relative;
+    z-index: 0;
+  }
+
+  body::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  @font-face {
+    font-family: OpenSans-Medium;
+    src: url(fonts/OpenSans-Medium.ttf);
+  }
+  
+  @font-face {
+    font-family: IBMPsemibold;
+    src: url(/fonts/IBMPlexMono-SemiBold.ttf);
+  }
+  
+  @font-face {
+    font-family: IBMPbold;
+    src: url(/fonts/IBMPlexMono-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: ChivoMono;
+    src: url(/fonts/ChivoMono-Black.ttf);
+  }
+  
+  @font-face {
+    font-family: Belanosima-Bold;
+    src: url(/fonts/Belanosima-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: ChivoMono-Bold;
+    src: url(/fonts/ChivoMono-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: soehneLight;
+    src: url(/fonts/TestSФhne-Leicht.otf);
+  }
+
+  @font-face {
+    font-family: soehneBold;
+    src: url(/fonts/TestSФhne-Dreiviertelfett.otf);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* menu navigation */
+  
+  .menu {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+  }
+  
+  .menu__logo {
+    margin-right: 50px;
+    list-style: none;
+  
+    transition: opacity 0.2s;
+  }
+  
+  .menu__logo:hover {
+    opacity: 0.6;
+  }
+  
+  .menu__link {
+    margin: 0 15px;
+    list-style: none;
+  }
+  
+  .nav__link {
+    font-size: 26px;
+    font-family: OpenSans-Medium;
+    color: #e8e3cd;
+    text-decoration: none;
+  
+    transition: color 0.2s;
+  }
+  
+  .nav__link:hover {
+    color:#ffd500;
+    opacity: 0.8;
+  }
+  
+  .to__wiki {
+    transition: opacity 0.2s;
+  }
+  
+  .to__wiki:hover {
+    opacity: 0.4;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding-bottom: 200px;
+
+    position: absolute;
+    top: 270px;
+    left: 200px;
+    z-index: 1;
+  }
+
+  .foto {
+    width: 350px;
+    border-radius: 15px;
+  }
+
